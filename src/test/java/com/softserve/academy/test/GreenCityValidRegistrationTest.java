@@ -46,7 +46,7 @@ class GreenCityValidRegistrationTest extends BaseTest {
     void testRegistration(User user) {
 
         logger.info("Test started for user: {}", user.getEmail());
-        
+
         User testUser = User.builder()
                 .email(generateUniqueEmail(user.getEmail()))
                 .name(user.getName())
